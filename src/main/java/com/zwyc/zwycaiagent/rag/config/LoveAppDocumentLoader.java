@@ -1,4 +1,4 @@
-package com.zwyc.zwycaiagent.rag;
+package com.zwyc.zwycaiagent.rag.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.document.Document;

@@ -1,4 +1,4 @@
-package com.zwyc.zwycaiagent.rag;
+package com.zwyc.zwycaiagent.rag.config;
 
 import jakarta.annotation.Resource;
 import org.springframework.ai.document.Document;

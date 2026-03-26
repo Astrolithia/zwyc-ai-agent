@@ -23,15 +23,13 @@ class PgVectorVectorStoreConfigTest {
     @Test
     void pgVectorStore() {
         List<Document> documents = List.of(
-                new Document("", Map.of("meta1", "meta1")),
-                new Document("The World is Big and Salvation Lurks Around the Corner"),
-                new Document("You walk forward facing the past and you turn back toward the future.", Map.of("meta2", "meta2")));
-
+                new Document("Lexora平台有什么用？学习英语啊，背单词啊", Map.of("meta1", "meta1")),
+                new Document("Zwickyc的原创学习英语平台...."),
+                new Document("Zwickyc偷吃Doro大王的橘子", Map.of("meta2", "meta2")));
         // Add the documents to PGVector
         pgVectorVectorStore.add(documents);
-
         // Retrieve documents similar to a query
-        List<Document> results = this.pgVectorVectorStore.similaritySearch(SearchRequest.builder().query("Spring").topK(5).build());
+        List<Document> results = this.pgVectorVectorStore.similaritySearch(SearchRequest.builder().query("怎么学英语啊").topK(5).build());
         Assertions.assertNotNull(results);
     }
 }

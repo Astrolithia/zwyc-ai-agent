@@ -1,4 +1,4 @@
-package com.zwyc.zwycaiagent.rag;
+package com.zwyc.zwycaiagent.rag.config;
 
 import com.alibaba.cloud.ai.dashscope.api.DashScopeApi;
 import com.alibaba.cloud.ai.dashscope.rag.DashScopeDocumentRetriever;
